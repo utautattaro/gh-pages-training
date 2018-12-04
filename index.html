@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello github pages!</title>
+</head>
+<body>
+    <h1>初めてのgithub pages</h1>
+    <p>JavaScriptを動かそう</p>
+    <form>
+        <input type="number" id="a" value = 1></input>
+        +
+        <input type="number" id="b" value = 1></input>
+        =
+        <input type="text" id="ans"></input>
+        <button id="go">Go</button>
+    </form>
+</body>
+<script>
+    document.getElementById("go").addEventListener("click",function(){
+        var ans = add2(
+            document.getElementById("a").value,
+            document.getElementById("b").value
+        );
+        document.getElementById("ans").value = ans;
+    },false);
+
+    function add2(a,b){
+        return parseInt(a,10) + parseInt(b,10);
+    }
+</script>
+</html>
